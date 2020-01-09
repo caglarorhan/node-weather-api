@@ -4,7 +4,7 @@ window.addEventListener('load',()=>{
         event.preventDefault();
         document.getElementById('locationForeCastInfo').innerHTML='Loading...';
         let locationName = document.getElementById('locationName').value;
-        fetch('http://localhost:3000/weather?address='+locationName).then((response)=>{
+        fetch('/weather?address='+locationName).then((response)=>{
             (response.json().then((data)=>{
                 if(data.error){
                     document.getElementById('locationForeCastInfo').innerHTML=`<p style="color:red; font-weight: bold">${data.error}</p>`;
