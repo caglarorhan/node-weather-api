@@ -12,6 +12,8 @@ window.addEventListener('load',()=>{
                     document.getElementById('locationForeCastInfo').innerHTML=`
                             <h4>${data.location.name}</h4>
                             
+                            <p><b>Time Zone:</b>${data.location.timezone}
+                            <br>
                             <p><b>Summary:</b>${data.location.summary}
                             <br>
                             <b>Current Temperature:</b>${data.location.currentTemp}

@@ -16,6 +16,7 @@ const forecast = (error, koordObj, callback)=>{
                     fullData.location.name = koordObj.locationName;
                     fullData.location.lat = koordObj.lat;
                     fullData.location.lon = koordObj.lon;
+                    fullData.location.timezone = response.body.timezone;
                     fullData.location.currentTemp = response.body.currently.temperature;
                     fullData.location.curProbability = response.body.currently.precipProbability;
                     fullData.location.summary = response.body.daily.data[0].summary;
