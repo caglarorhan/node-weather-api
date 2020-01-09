@@ -14,9 +14,11 @@ window.addEventListener('load',()=>{
                             
                             <p><b>Time Zone:</b>${data.location.timezone}
                             <br>
+                            <img src="https://darksky.net/images/weather-icons/${data.location.icon}.png" width="32px"  alt="">
+                            <br>
                             <p><b>Summary:</b>${data.location.summary}
                             <br>
-                            <b>Current Temperature:</b>${data.location.currentTemp}
+                            <b>Current Temperature:</b>${data.location.currentTemp} °C
                             <br>
                             <b>Coordinates(lat,lon):</b>${data.location.lat}, ${data.location.lat}
                             <br>
