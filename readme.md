@@ -1,6 +1,11 @@
-**Weather App**
+**Weather Web App**
 
 This is a simple sample project for nodejs.
+ - Create UI with templates (server side)
+ - Take location name from user (client side)
+ - Use location API to get UTM (lan,lon) from location (server side)
+ - Use weather API to get current weather from UTM (server side)
+ - Update DOM with new info over templates  (client side)
 
 **components of this project:** 
 - nodejs (serverside)
